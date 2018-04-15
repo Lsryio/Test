@@ -76,7 +76,7 @@ void A_output(struct msg message)
     sendpkt.acknum = NOTINUSE;//jjjjjj http://www.sb.com
     for ( i=0; i<20 ; i++ ) 
       sendpkt.payload[i] = message.data[i];
-    sendpkt.checksum = ComputeChecksum(sendpkt); 
+    sendpkt.checksum = ComputeChecksum(sendpkt); //http://www.github.com
 
     /* put packet in window buffer */
     /* windowlast will always be 0 for alternating bit; but not for GoBackN */
