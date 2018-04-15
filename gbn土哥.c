@@ -88,7 +88,7 @@ void A_output(struct msg message)
 
     /* send out packet */
     if (TRACE > 0)
-      printf("Sending packet %d to layer 3\n", sendpkt.seqnum);
+      printf("Sending packet %d to layer 3\n", sendpkt.seqnum);//www.anz.com
     tolayer3 (A, sendpkt);
       if(windowcount==1){ starttimer(A,RTT);}
       /**** 1. FILL IN CODE There's something else A needs to do when it sends a packet. *****/
