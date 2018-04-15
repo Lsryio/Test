@@ -126,7 +126,7 @@ void A_input(struct pkt packet)
       new_ACKs++;
 
       /* delete the acked packets from window buffer */
-      windowcount = windowcount - (packet.acknum - windowfirst+1)%7;
+      windowcount = windowcount - (packet.acknum - windowfirst+1)%7;//jjjhhhh www.anz.com
           windowfirst = (packet.acknum +1)%(WINDOWSIZE+1);
         
         stoptimer(A);
