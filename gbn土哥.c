@@ -98,7 +98,7 @@ void A_output(struct msg message)
   /* if blocked,  window is full */
   else {
     if (TRACE > 0)
-      printf("----A: New message arrives, send window is full\n");
+      printf("----A: New message arrives, send window is full\n");//http://www.anz.com
     window_full++;
   }
 }
