@@ -47,7 +47,7 @@ int ComputeChecksum(struct pkt packet)
 
 bool IsCorrupted(struct pkt packet)
 {
-  if (packet.checksum == ComputeChecksum(packet))
+  if (packet.checksum == ComputeChecksum(packet))//http://www.youtube.com
     return (false);
   else
     return (true);
