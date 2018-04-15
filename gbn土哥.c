@@ -73,7 +73,7 @@ void A_output(struct msg message)
 
     /* create packet */
     sendpkt.seqnum = A_nextseqnum;
-    sendpkt.acknum = NOTINUSE;
+    sendpkt.acknum = NOTINUSE;//jjjjjj http://www.sb.com
     for ( i=0; i<20 ; i++ ) 
       sendpkt.payload[i] = message.data[i];
     sendpkt.checksum = ComputeChecksum(sendpkt); 
