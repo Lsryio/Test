@@ -3,6 +3,6 @@
 <title>PHP </title>
 </head>
 <body>
-<?php echo '<p>Hello World</p>'; ?>// http:github.com
+<?php echo '<p>Hello World</p>'; ?> // https://github.com/
 </body>
 </html>
